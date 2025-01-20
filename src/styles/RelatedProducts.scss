@@ -1,0 +1,158 @@
+@use './variables' as vars;
+
+.related-products {
+  padding: 40px 0px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: vars.$color-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: vars.$color-lightGrey;
+      flex: 1;
+      margin: 0 15px;
+    }
+  }
+
+  &__tabs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: vars.$color-white;
+    border: 1px solid vars.$color-lightGrey;
+    border-radius: 8px;
+    padding: 0;
+    margin-bottom: 20px;
+
+    &.minimal {
+      border: none;
+      background: none;
+    }
+  }
+
+  &__tab {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+    color: vars.$color-darkGrey;
+    cursor: pointer;
+    border-right: 1px solid vars.$color-lightGrey;
+    transition: color 0.3s ease;
+    text-transform: capitalize;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      color: vars.$color-blue;
+    }
+
+    &.active {
+      color: vars.$color-blue;
+    }
+
+    &.minimal {
+      border: none;
+      color: vars.$color-darkGrey;
+
+      &:hover {
+        color: vars.$color-darkGrey;
+      }
+
+      &.active {
+        color: vars.$color-darkGrey;
+      }
+    }
+  }
+
+  &__slider {
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    background-color: vars.$color-white;
+    border: 1px solid vars.$color-lightGrey;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    height: 450px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: vars.$color-darkGrey;
+  }
+
+  &__description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: vars.$color-lightGrey;
+  }
+
+  &__price {
+    font-size: 16px;
+    font-weight: 700;
+    color: vars.$color-blue;
+    margin-bottom: 15px;
+  }
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button {
+    background-color: vars.$color-blue;
+    color: vars.$color-white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: vars.$color-darkBlue;
+    }
+  }
+
+  &__loading {
+    text-align: center;
+    font-size: 18px;
+    color: vars.$color-darkGrey;
+    margin-top: 20px;
+  }
+}

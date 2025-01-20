@@ -1,0 +1,56 @@
+@use './variables' as vars;
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 390px;
+  background: url('../assets/banner/fundo-banner.png') no-repeat center center;
+  background-size: cover; 
+  color: vars.$color-white;
+  padding-left: 50px;
+
+  &__content {
+    text-align: left;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    span {
+      color: vars.$color-yellow;
+      font-weight: 700;
+    }
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    margin: 10px 0 20px;
+    color: vars.$color-white;
+
+    span {
+      color: vars.$color-yellow;
+    }
+  }
+
+  &__button {
+    background-color: vars.$color-yellow;
+    color: vars.$color-darkGrey;
+    font-size: 16px;
+    font-weight: 600;
+    width: 200px; 
+    height: 50px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: lighten(vars.$color-yellow, 25%); 
+      color: vars.$color-darkGrey;
+    }
+  }
+}

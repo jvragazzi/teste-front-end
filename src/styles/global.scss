@@ -1,0 +1,30 @@
+@use './variables' as vars;
+
+body {
+  font-family: vars.$font-primary;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  padding-left: 80px;
+  padding-right: 80px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+

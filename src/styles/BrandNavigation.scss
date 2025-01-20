@@ -1,0 +1,41 @@
+@use './variables' as vars;
+
+.brand-navigation {
+  text-align: center;
+  padding: 40px 0;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: vars.$color-blue;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__item {
+    width: 210px;
+    height: 210px;
+    background-color: vars.$color-white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__logo {
+    max-width: 60%;
+    height: auto;
+    object-fit: contain;
+  }
+}

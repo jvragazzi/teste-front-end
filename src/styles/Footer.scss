@@ -1,0 +1,98 @@
+@use './variables' as vars;
+
+.footer {
+  width: 100vw;
+  background-color: vars.$color-extraLightGray;
+  padding: 40px 0;
+  margin-left: calc(-1 * 80px);
+  margin-right: calc(-1 * 80px);
+
+  &__container {
+    max-width: calc(100% - 160px);
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      margin-left: 180px;
+      height: 80%;
+      width: 1px;
+      background-color: vars.$color-lightGrey;
+      left: 30%;
+      top: 10%;
+    }
+  }
+
+  &__brand {
+    flex: 1;
+
+    &-logo {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    &-description {
+      font-size: 14px;
+      color: vars.$color-darkGrey;
+      margin-bottom: 20px;
+    }
+
+    &-social {
+      display: flex;
+      gap: 25px;
+
+      i {
+        font-size: 18px;
+        color: vars.$color-darkGrey;
+        cursor: pointer;
+
+        &:hover {
+          color: vars.$color-blue;
+        }
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 40px;
+
+    &-section {
+      flex: 1;
+
+      &-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: vars.$color-darkGrey;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 5px;
+
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            color: vars.$color-darkGrey;
+
+            &:hover {
+              color: vars.$color-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

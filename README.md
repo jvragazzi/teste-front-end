@@ -1,31 +1,15 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# Produtos Relacionados - Projeto Front-End
 
-### Vem ser #Econverse!
+Este é um projeto de front-end desenvolvido para exibir produtos relacionados, incluindo funcionalidades de modal para exibição de detalhes do produto. O projeto foi construído utilizando React, TypeScript, SCSS e Swiper.js, com um design responsivo e interativo que proporciona uma navegação intuitiva e fluida.
 
-Segue abaixo as instruções para a execução do teste.
+Para começar a trabalhar com o projeto, certifique-se de ter o Node.js e o npm ou yarn instalados em sua máquina. Primeiro, clone o repositório com o comando `git clone https://github.com/<seu-usuario>/<nome-do-repositorio>.git` e acesse o diretório clonado com `cd <nome-do-repositorio>`. Em seguida, instale todas as dependências necessárias executando `npm install` ou `yarn`. Para rodar o projeto em ambiente de desenvolvimento, utilize o comando `npm run dev` ou `yarn dev`. Após a execução, a aplicação estará disponível em `http://localhost:5173`.
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+O projeto também suporta a criação de uma build otimizada para produção. Para isso, basta executar `npm run build` ou `yarn build`, e os arquivos finais serão gerados no diretório `dist`. Caso existam testes configurados no projeto, eles podem ser executados com `npm test` ou `yarn test`.
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+A estrutura do projeto foi organizada para facilitar o desenvolvimento e a manutenção. Os principais arquivos e diretórios incluem a pasta `assets` para armazenar imagens e ícones, `components` para os componentes React, e `styles` para os arquivos de estilo SCSS. O componente principal está em `App.tsx` e o ponto de entrada da aplicação é o arquivo `main.tsx`.
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+As principais funcionalidades incluem a exibição de produtos relacionados organizados por categorias, com um carrossel interativo gerenciado pelo Swiper.js. Ao clicar em um produto, um modal é exibido com mais informações detalhadas, incluindo uma imagem ampliada, preço, descrição e opções para selecionar a quantidade e finalizar a compra. As categorias podem ser navegadas facilmente pelos botões no topo da seção de produtos.
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+Para contribuir com o projeto, faça um fork do repositório, crie uma nova branch para suas alterações e submeta um pull request com as melhorias propostas. O projeto está sob a licença MIT, permitindo o uso, modificação e distribuição livremente.
 
-**Boa sorte! ;)**
+Desenvolvido por [João Victor Ragazzi](https://github.com/seu-usuario).

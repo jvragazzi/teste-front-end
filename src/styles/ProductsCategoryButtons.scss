@@ -1,0 +1,63 @@
+@use './variables' as vars;
+
+.product-category-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: vars.$color-extraLightGray;
+
+  &__container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: auto;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 128px;
+    height: 128px;
+    background-color: vars.$color-white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: vars.$color-white;
+
+      .product-category-buttons__icon {
+        filter: invert(24%) sepia(100%) saturate(7460%) hue-rotate(220deg) brightness(95%) contrast(95%);
+      }
+
+      .product-category-buttons__label {
+        color: vars.$color-blue;
+      }
+    }
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+
+    &--large {
+      width: 120px;
+      height: 120px;
+      margin-bottom: -15px;
+      margin-top: -30px;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    font-weight: 600;
+    color: vars.$color-darkGrey;
+    text-align: center;
+  }
+}
